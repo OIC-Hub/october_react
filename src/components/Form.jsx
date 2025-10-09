@@ -12,10 +12,8 @@ const Form = () => {
       
     }else if(email == ""){
     console.log("This email field is required");
-    
     } else{
       console.log("Invalid email");
-      
     }
     localStorage.setItem("user", JSON.stringify({ name, email }));
     console.log(name, email);
