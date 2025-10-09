@@ -2,6 +2,7 @@ import './App.css'
 import Button from './components/Button'
 import Cards from './components/Cards'
 import Form from './components/Form'
+import Product from './components/product'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Button />
       <Cards />
       <Form />
+      <Product />
     </>
   )
 }
