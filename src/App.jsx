@@ -1,20 +1,35 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import React from 'react'
+import Navbar from './common/Navbar'
+import Footer from './common/Footer'
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
 // import Button from './components/Button'
 // import Cards from './components/Cards'
 // import Form from './components/Form'
 // import MondayClass from './components/MondayClass'
 // import Product from './components/product'
-import TuesdayClass from './components/TuesdayClass'
+// import TuesdayClass from './components/TuesdayClass'
 
 function App() {
 
 
   return (
     <>
-      <h1>Hello React!</h1>
+    <BrowserRouter>
+      <Navbar />
+     <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+     </Routes>
+     <Footer />
+    </BrowserRouter>
+      {/* <h1>Hello React!</h1> */}
       {/* <MondayClass /> */}
-      <TuesdayClass />
+      {/* <TuesdayClass /> */}
       {/* <Button />
       <Cards />
       <Form />
