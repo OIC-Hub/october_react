@@ -6,6 +6,8 @@ import Footer from './common/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
+import Products from './pages/products/Products'
+import ProductDetail from './pages/products/ProductDetail'
 // import Button from './components/Button'
 // import Cards from './components/Cards'
 // import Form from './components/Form'
@@ -24,6 +26,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/products" element={<Products />} />
+        <Route path='/products/:id' element={<ProductDetail />} />
      </Routes>
      <Footer />
     </BrowserRouter>
