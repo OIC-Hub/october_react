@@ -8,6 +8,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Products from './pages/products/Products'
 import ProductDetail from './pages/products/ProductDetail'
+import Sidebar from './common/Sidebar'
 // import Button from './components/Button'
 // import Cards from './components/Cards'
 // import Form from './components/Form'
@@ -20,17 +21,17 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
-      <Navbar />
-     <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/products" element={<Products />} />
-        <Route path='/products/:id' element={<ProductDetail />} />
-     </Routes>
-     <Footer />
-    </BrowserRouter>
+      <BrowserRouter>               
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/products/:id" element={<ProductDetail />} />
+          </Routes>
+        <Footer />
+      </BrowserRouter>
       {/* <h1>Hello React!</h1> */}
       {/* <MondayClass /> */}
       {/* <TuesdayClass /> */}
@@ -39,7 +40,7 @@ function App() {
       <Form />
       <Product /> */}
     </>
-  )
+  );
 }
 
 export default App
